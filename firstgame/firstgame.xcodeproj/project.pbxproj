@@ -121,7 +121,9 @@
 		EF73046514D9360F00949726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73046414D9360F00949726 /* main.m */; };
 		EF73046814D9360F00949726 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73046714D9360F00949726 /* AppDelegate.m */; };
 		EF73046B14D9360F00949726 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73046A14D9360F00949726 /* RootViewController.m */; };
-		EF73046E14D9360F00949726 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73046D14D9360F00949726 /* HelloWorldLayer.m */; };
+		EF73046E14D9360F00949726 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73046D14D9360F00949726 /* GameLayer.m */; };
+		EF73048214D93AFE00949726 /* Jumper.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73048114D93AFE00949726 /* Jumper.m */; };
+		EF73048514D93B1800949726 /* Stand.m in Sources */ = {isa = PBXBuildFile; fileRef = EF73048414D93B1800949726 /* Stand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -357,9 +359,13 @@
 		EF73046714D9360F00949726 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF73046914D9360F00949726 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		EF73046A14D9360F00949726 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		EF73046C14D9360F00949726 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		EF73046D14D9360F00949726 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		EF73046C14D9360F00949726 /* GameLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		EF73046D14D9360F00949726 /* GameLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		EF73046F14D9360F00949726 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		EF73048014D93AFE00949726 /* Jumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jumper.h; sourceTree = "<group>"; };
+		EF73048114D93AFE00949726 /* Jumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jumper.m; sourceTree = "<group>"; };
+		EF73048314D93B1800949726 /* Stand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stand.h; sourceTree = "<group>"; };
+		EF73048414D93B1800949726 /* Stand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,12 +422,13 @@
 		EF73031414D9360C00949726 /* firstgame */ = {
 			isa = PBXGroup;
 			children = (
+				EF73047E14D93AD000949726 /* models */,
 				EF73046614D9360F00949726 /* AppDelegate.h */,
 				EF73046714D9360F00949726 /* AppDelegate.m */,
 				EF73046914D9360F00949726 /* RootViewController.h */,
 				EF73046A14D9360F00949726 /* RootViewController.m */,
-				EF73046C14D9360F00949726 /* HelloWorldLayer.h */,
-				EF73046D14D9360F00949726 /* HelloWorldLayer.m */,
+				EF73046C14D9360F00949726 /* GameLayer.h */,
+				EF73046D14D9360F00949726 /* GameLayer.m */,
 				EF73046F14D9360F00949726 /* GameConfig.h */,
 				EF73031514D9360C00949726 /* Resources */,
 				EF73032914D9360D00949726 /* libs */,
@@ -758,6 +765,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EF73047E14D93AD000949726 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EF73048014D93AFE00949726 /* Jumper.h */,
+				EF73048114D93AFE00949726 /* Jumper.m */,
+				EF73048314D93B1800949726 /* Stand.h */,
+				EF73048414D93B1800949726 /* Stand.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -924,7 +942,9 @@
 				EF73046514D9360F00949726 /* main.m in Sources */,
 				EF73046814D9360F00949726 /* AppDelegate.m in Sources */,
 				EF73046B14D9360F00949726 /* RootViewController.m in Sources */,
-				EF73046E14D9360F00949726 /* HelloWorldLayer.m in Sources */,
+				EF73046E14D9360F00949726 /* GameLayer.m in Sources */,
+				EF73048214D93AFE00949726 /* Jumper.m in Sources */,
+				EF73048514D93B1800949726 /* Stand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,6 +1038,7 @@
 				EF73047414D9360F00949726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
